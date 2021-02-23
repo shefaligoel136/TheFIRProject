@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIR Form</title>
+
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        #body-header {
+            background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+            height: 40vh;
+            opacity: 0.8;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .horizontal-list {
+            list-style: none;
+            padding-left: 0px;
+            margin: 0px;
+        }
+
+        .horizontal-list li {
+            display: inline-block;
+            margin: 0px 8px 8px 0px;
+            font-weight: 100;
+            font-size: 0.9rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .horizontal-list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .my-name {
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        #my-image {
+            height: 12rem;
+            width: 12rem;
+            margin: auto;
+            margin-top: -17vh;
+        }
+
+        #my-image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 1px 10px 2px lightgrey;
+        }
+        section{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding:30px;
+        }
+
+
+        .heading {
+            color: #008080;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px 10px 10px;
+            margin: 5px auto;
+            font-weight: 600;
+        }
+
+        .form-details{
+            height: auto;
+            width: auto;
+            padding-top: 40px;
+            line-height: 15px;
+            padding-left: 10px;
+            text-align: center;
+            border: 2px solid #008080;
+            color:#008080;
+            font-size: 15px;
+        }
+
+        .form-details input{
+            width: 250px;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<header id="body-header">
+
+    <nav>
+        <ul class="horizontal-list text-center nav-menu">
+
+            <li>
+                <a href="TheFirstPage.php">Home</a>
+            </li>
+            <li>
+                <a href="#myFir">MY FIR</a>
+            </li>
+            <li>
+                <a href="">Logout</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="name-container">
+        <div class="text-center my-name">
+            <h3>Online FIR Portal</h3>
+        </div>
+    </div>
+</header>
+
+<div id="my-image">
+    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg"
+         alt="logo">
+</div>
+
+<section id="form-part">
+    <h2>Fill the form to get the FIR registered.</h2>
+        <h4 class="heading">Your Details</h4>
+    <div class="form-details">
+        <label for="name">Name:</label>
+        <input type="text" name="name"  required>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" placeholder="Uttar Pradesh">
+
+        <label for="city">City:</label>
+        <input type="text" name="city" placeholder="Kanpur"><br>
+
+        <label for="pstation">Nearest police station:</label>
+        <input type="text" name="pstation" required>
+
+        <label for="pincode">Pincode</label>
+        <input type="number" name="pincode" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="">
+
+        <label for="number">Number:</label>
+        <input type="number" name="number" placeholder="" required><br>
+    </div>
+
+    <h4 class="heading">Victims Details</h4>
+    <div class="form-details">
+        <label for="name">Name:</label>
+        <input type="text" name="name"  required>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" placeholder="Uttar Pradesh">
+
+        <label for="city">City:</label>
+        <input type="text" name="city" placeholder="Kanpur"><br>
+
+        <label for="pstation">Nearest police station:</label>
+        <input type="text" name="pstation" >
+
+        <label for="pincode">Pincode</label>
+        <input type="number" name="pincode" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="">
+
+        <label for="number">Number:</label>
+        <input type="number" name="number" placeholder="" ><br>
+
+        <label for="disability">Disability if any:</label>
+        <input type="text" name="disability"><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio"  name="gender" value="male" id="male"checked>
+        <label for="female">Male</label><br>
+
+        <input type="radio"  name="gender" value="other" id="other">
+        <label for="female">Other</label><br>
+
+    </div>
+
+    <h4 class="heading">Incident Details</h4>
+    <div class="form-details">
+        <label for="place">Place:</label>
+        <input type="text" name="palce"  id="place" required>
+
+        <label for="date">Incident Date:</label>
+        <input type="date" name="date" id="date" required><br>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" required>
+
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required><br>
+
+        <label for="pstation">Nearest police station:</label>
+        <input type="text" name="pstation" id="pstation" >
+
+        <label for="pincode">Pincode:</label>
+        <input type="number" name="pincode" id="pincode"><br>
+
+        <label for="complain">Write the complain:-</label>
+        <textarea   rows="5" cols="50" name="compalin" id="complain" required></textarea><br><br>
+
+        <label>Have filled this complaint anywhere earlier?</label><br>
+        <input type="radio" name="filled" value="yes" id="yes">
+        <label for="yes"> Yes</label><br>
+
+        <input type="radio" name="filled" value="no" id="no">
+        <label for="no"> no</label>
+
+    </div>
+    <br>
+    <button type="submit">SUBMIT</button>
+</section>
+<hr>
+
+<section id="myFir">
+ <h2 >MY registered FIR's</h2>
+
+</section>
+
+</body>
+</html>
